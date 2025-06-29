@@ -17,15 +17,11 @@ open class MediaLibrarySessionCallback(context: Context) :
         MediaItemTree.initialize()
     }
 
-    // Overridden methods #########################################################################
-
     @OptIn(UnstableApi::class)
     override fun onConnect(
         session: MediaSession,
         controller: MediaSession.ControllerInfo,
     ): MediaSession.ConnectionResult {
-        // Accept the connection and allow the controller to use the default
-        // available session commands and player commands.
         return MediaSession.ConnectionResult.AcceptedResultBuilder(session).build()
     }
 

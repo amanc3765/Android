@@ -13,7 +13,6 @@ object MediaItemTree {
 
     private data class MediaItemNode(val mediaItem: MediaItem)
 
-
     fun initialize() {
         if (isInitialized) return
         isInitialized = true
